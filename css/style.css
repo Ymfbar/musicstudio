@@ -1,5 +1,6 @@
 /* Custom CSS Anda */
 body {
+    background-image:url('../css/images/yystudio.jpg');
     background-color: #f8f9fa;
     display: flex; /* Mengaktifkan Flexbox */
     flex-direction: column; /* Mengatur arah item menjadi kolom */
