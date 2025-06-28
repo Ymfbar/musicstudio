@@ -28,6 +28,7 @@ body {
     align-items: center; /* Pusatkan secara horizontal */
     text-align: center; /* Pusatkan teks */
     position: relative; /* Diperlukan untuk overlay */
+    transition: transform 0.3s ease;
 }
 
 .hero-section::before { /* Overlay gelap untuk kontras teks */
@@ -39,7 +40,6 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Warna overlay hitam transparan */
     z-index: 1;
-    transition: transform 0.3s ease
 }
 
 .hero-content { /* Konten teks dan tombol di dalam hero section */
