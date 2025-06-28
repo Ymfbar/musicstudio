@@ -1,6 +1,5 @@
 /* Custom CSS Anda */
 body {
-    background-image:url('../css/images/yystudio.jpg');
     background-color: #f8f9fa;
     display: flex; /* Mengaktifkan Flexbox */
     flex-direction: column; /* Mengatur arah item menjadi kolom */
@@ -14,6 +13,7 @@ body {
     display: flex; /* Tambahkan flexbox juga jika ingin mengatur konten di dalamnya */
     flex-direction: column; /* Mengatur arah konten di dalamnya ke bawah */
 }
+
 /* Modifikasi Jumbotron/Hero Section */
 .hero-section { /* Ganti .jumbotron dengan .hero-section untuk pemisahan gaya */
     background-image: url('https://via.placeholder.com/1500x800?text=Awesome+Music+Studio'); /* Ganti dengan gambar latar belakang Anda */
@@ -27,11 +27,11 @@ body {
     justify-content: center;
     align-items: center; /* Pusatkan secara horizontal */
     text-align: center; /* Pusatkan teks */
-    position: relative; /* Diperlukan untuk overlay */
-    transition: transform 0.3s ease;
+    position: relative; /* Diperlukan untuk overlay dan pseudo-elemen */
+    overflow: hidden; /* Penting agar pseudo-elemen border tidak meluber */
 }
 
-.hero-section::before { /* Overlay gelap untuk kontras teks */
+.hero-section::before { /* Ini adalah overlay gelap utama, tetap ada */
     content: "";
     position: absolute;
     top: 0;
@@ -39,12 +39,32 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Warna overlay hitam transparan */
-    z-index: 1;
+    z-index: 1; /* Pastikan di atas border, tapi di bawah konten */
+}
+
+/* Ini adalah pseudo-elemen untuk border yang mengambang */
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid rgba(255, 255, 255, 0.8); /* Warna border saat muncul */
+    opacity: 0; /* Awalnya tidak terlihat */
+    transform: scale(0.98); /* Awalnya sedikit lebih kecil dari elemen induk */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transisi untuk opacity dan scale */
+    z-index: 0; /* Pastikan di bawah overlay gelap */
+}
+
+.hero-section:hover::after {
+    opacity: 1; /* Muncul saat di-hover */
+    transform: scale(1); /* Mengembang ke ukuran penuh elemen induk */
 }
 
 .hero-content { /* Konten teks dan tombol di dalam hero section */
     position: relative;
-    z-index: 2; /* Pastikan konten di atas overlay */
+    z-index: 2; /* Pastikan konten di atas overlay dan border */
     padding: 20px;
 }
 
@@ -66,7 +86,7 @@ body {
 
 .card {
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 /* Gaya untuk kotak layanan (What We Offer) */
@@ -76,8 +96,7 @@ body {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color:rgba(255, 255, 255, 0.2); /* Warna latar belakang putih transparan */
-    backdrop-filter: blur(2px); /* Efek blur untuk transparansi */
+    background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -88,18 +107,52 @@ body {
 
 .service-box .icon {
     font-size: 3rem; /* Ukuran ikon */
-    color: #636c74; /* Warna ikon Bootstrap primary */
+    color: #007bff; /* Warna ikon Bootstrap primary */
     margin-bottom: 15px;
 }
 
 .service-box h5 {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #000000;
+    color: #343a40;
 }
 
 .service-box p {
-    color: #ffffff;
+    color: #6c757d;
+}
+
+/* Gaya untuk Transparent Box */
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.2); /* Latar putih dengan transparansi 20% */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Border putih transparan */
+    border-radius: 10px; /* Sudut membulat */
+    padding: 20px; /* Ruang di dalam kotak */
+    color: #fff; /* Warna teks putih agar kontras dengan latar gelap di belakangnya */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sedikit bayangan untuk kedalaman */
+    backdrop-filter: blur(5px); /* Efek blur pada konten di belakangnya (opsional, modern browsers only) */
+    -webkit-backdrop-filter: blur(5px); /* Untuk kompatibilitas Safari */
+}
+
+.transparent-box h2,
+.transparent-box p {
+    color: #fff; /* Pastikan teks di dalamnya juga putih */
+}
+
+/* Tambahan jika Anda ingin box ini ada di hero section dan terlihat bagus */
+.hero-section .transparent-box {
+    max-width: 600px; /* Batasi lebar agar tidak terlalu lebar di desktop */
+    margin-top: 20px; /* Sedikit spasi dari atas */
+}
+
+/* Warna kustom untuk heading "What We Offer" */
+.custom-heading-color {
+    color: #FF5733; /* Contoh warna oranye/merah. Ganti dengan kode warna HEX, RGB, atau nama warna yang Anda inginkan */
+}
+
+/* Mengatur ukuran logo di navbar */
+.navbar-brand img {
+    width: 30px;  /* Ganti sesuai ukuran yang diinginkan */
+    height: 30px; /* Ganti sesuai ukuran yang diinginkan */
 }
 
 /* Opsional: Tambahkan padding ke container jika konten terlalu menempel ke tepi */
