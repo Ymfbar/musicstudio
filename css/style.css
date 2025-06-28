@@ -94,11 +94,11 @@ body {
 .service-box h5 {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .service-box p {
-    color: #6c757d;
+    color: #ffffff;
 }
 
 /* Opsional: Tambahkan padding ke container jika konten terlalu menempel ke tepi */
