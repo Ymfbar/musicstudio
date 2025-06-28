@@ -31,6 +31,21 @@ body {
     transition: transform 0.3s ease;
 }
 
+.hero-section:hover { /* Ganti .jumbotron dengan .hero-section untuk pemisahan gaya */
+    background-image: url('https://via.placeholder.com/1500x800?text=Awesome+Music+Studio'); /* Ganti dengan gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    min-height: 500px; /* Tinggikan sedikit hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Pusatkan secara horizontal */
+    text-align: center; /* Pusatkan teks */
+    position: relative; /* Diperlukan untuk overlay */
+}
+
 .hero-section::before { /* Overlay gelap untuk kontras teks */
     content: "";
     position: absolute;
