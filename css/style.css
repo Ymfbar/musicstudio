@@ -14,21 +14,53 @@ body {
     flex-direction: column; /* Mengatur arah konten di dalamnya ke bawah */
 }
 
-.jumbotron {
-    background-image: url('https://via.placeholder.com/1200x400?text=Music+Studio+Background');
+/* Modifikasi Jumbotron/Hero Section */
+.hero-section { /* Ganti .jumbotron dengan .hero-section untuk pemisahan gaya */
+    background-image: url('https://via.placeholder.com/1500x800?text=Awesome+Music+Studio'); /* Ganti dengan gambar latar belakang Anda */
     background-size: cover;
     background-position: center;
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    min-height: 300px; /* Tambahkan tinggi minimal agar terlihat */
+    min-height: 500px; /* Tinggikan sedikit hero section */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Pusatkan secara horizontal */
+    text-align: center; /* Pusatkan teks */
+    position: relative; /* Diperlukan untuk overlay */
 }
 
-.jumbotron h1, .jumbotron p {
-    margin-bottom: 0.5rem;
+.hero-section::before { /* Overlay gelap untuk kontras teks */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Warna overlay hitam transparan */
+    z-index: 1;
+}
+
+.hero-content { /* Konten teks dan tombol di dalam hero section */
+    position: relative;
+    z-index: 2; /* Pastikan konten di atas overlay */
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Ukuran font lebih besar */
+    margin-bottom: 1rem;
+}
+
+.hero-section p.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border-radius: 50px; /* Tombol bulat */
 }
 
 .card {
@@ -36,7 +68,39 @@ body {
     border-radius: 10px;
 }
 
+/* Gaya untuk kotak layanan (What We Offer) */
+.service-box {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service-box .icon {
+    font-size: 3rem; /* Ukuran ikon */
+    color: #007bff; /* Warna ikon Bootstrap primary */
+    margin-bottom: 15px;
+}
+
+.service-box h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.service-box p {
+    color: #6c757d;
+}
+
 /* Opsional: Tambahkan padding ke container jika konten terlalu menempel ke tepi */
 .container {
-    padding-bottom: 1px; /* Contoh padding bawah */
+    padding-bottom: 20px; /* Contoh padding bawah */
 }

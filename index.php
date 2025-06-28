@@ -3,40 +3,55 @@ include 'config.php';
 include 'includes/header.php';
 ?>
 
-<div class="jumbotron bg-light p-5 rounded-3">
-    <h1 class="display-4">Selamat Datang di Music Studio!</h1>
-    <p class="lead">Tempat terbaik untuk mengembangkan bakat musik Anda.</p>
-    <hr class="my-4">
-    <p>Kami menyediakan berbagai fasilitas dan layanan untuk musisi dari semua tingkatan.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Pelajari Lebih Lanjut</a>
-</div>
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="display-2 mb-3">Make Your Music Shine</h1>
+        <p class="lead mb-4">Discover, Create, and Record Your Sound with Our Professional Studio.</p>
+        <a class="btn btn-primary btn-lg" href="register.php" role="button">Get Started Now</a>
+    </div>
+</section>
 
-<div class="row mt-4">
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Ruang Latihan Profesional</h5>
-                <p class="card-text">Studio kami dilengkapi dengan peralatan terbaik untuk latihan Anda.</p>
+<section class="container my-5">
+    <h2 class="text-center mb-5 display-4 fw-bold">What We Offer</h2>
+    <div class="row">
+        <div class="col-md-6 col-lg-3">
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h5>Professional Recording</h5>
+                <p>Capture your sound with crystal-clear quality using our state-of-the-art equipment.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h5>Dedicated Practice Rooms</h5>
+                <p>Hone your skills in comfortable and acoustically treated practice spaces.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <h5>Mixing & Mastering</h5>
+                <p>Bring your tracks to life with expert mixing and mastering services.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h5>Music Lessons</h5>
+                <p>Learn from experienced instructors in various instruments and genres.</p>
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Kursus Musik Interaktif</h5>
-                <p class="card-text">Belajar dari instruktur berpengalaman dengan metode yang menyenangkan.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-body">
-                <h5 class="card-title">Jasa Rekaman Kualitas Tinggi</h5>
-                <p class="card-text">Abadikan karya Anda dengan kualitas audio yang jernih dan profesional.</p>
-            </div>
-        </div>
-    </div>
-</div>
+</section>
 
 <?php
 include 'includes/footer.php';
