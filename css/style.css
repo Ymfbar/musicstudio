@@ -76,7 +76,8 @@ body {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.2); /* Warna latar belakang putih transparan */
+    backdrop-filter: blur(10px); /* Efek blur untuk transparansi */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
