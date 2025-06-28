@@ -15,6 +15,10 @@ body {
     flex-direction: column; /* Mengatur arah konten di dalamnya ke bawah */
 }
 
+.custom-heading-color {
+    color: #FF5733;
+}
+
 /* Modifikasi Jumbotron/Hero Section */
 .hero-section { /* Ganti .jumbotron dengan .hero-section untuk pemisahan gaya */
     background-image: url('https://via.placeholder.com/1500x800?text=Awesome+Music+Studio'); /* Ganti dengan gambar latar belakang Anda */
