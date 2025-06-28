@@ -66,7 +66,7 @@ body {
 
 .card {
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 /* Gaya untuk kotak layanan (What We Offer) */
@@ -105,9 +105,4 @@ body {
 /* Opsional: Tambahkan padding ke container jika konten terlalu menempel ke tepi */
 .container {
     padding-bottom: 20px; /* Contoh padding bawah */
-}
-
-.card {
-    border-radius: 10px; /* Membuat sudut kartu lebih bulat */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tambahkan bayangan untuk efek kedalaman */
 }
