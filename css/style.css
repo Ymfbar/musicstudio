@@ -106,3 +106,8 @@ body {
 .container {
     padding-bottom: 20px; /* Contoh padding bawah */
 }
+
+.card {
+    border-radius: 10px; /* Membuat sudut kartu lebih bulat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tambahkan bayangan untuk efek kedalaman */
+}

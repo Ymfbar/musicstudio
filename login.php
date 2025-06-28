@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 include 'includes/header.php';
 ?>
 
-<div class="row justify-content-center mt-5">
+<div class="card row justify-content-center mt-5">
     <div class="col-md-6 col-lg-4">
         <div class="card shadow-lg">
             <div class="card-header bg-primary text-white text-center">
