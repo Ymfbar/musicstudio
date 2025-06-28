@@ -39,6 +39,7 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); /* Warna overlay hitam transparan */
     z-index: 1;
+    transition: transform 0.3s ease
 }
 
 .hero-content { /* Konten teks dan tombol di dalam hero section */
