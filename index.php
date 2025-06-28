@@ -12,7 +12,7 @@ include 'includes/header.php';
 </section>
 
 <section class="container my-5">
-    <h2 class="text-center mb-5 display-4 fw-bold">What We Offer</h2>
+    <h2 class="text-center mb-5 display-4 fw-bold text-light">What We Offer</h2>
     <div class="row">
         <div class="col-md-6 col-lg-3">
             <div class="service-box">
