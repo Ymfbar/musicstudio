@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.php" onmouseover="this.querySelector('img').style.transform='scale(1.1)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
-                <img src="https://via.placeholder.com/40x40?text=MS" alt="Logo Music Studio" class="d-inline-block align-text-top me-2" style="transition: transform 0.3s ease;">
+                <img src="..css/images/musicstudiologo.png" width="50%" height="auto"> class="d-inline-block align-text-top me-2" style="transition: transform 0.3s ease;">
                 Music Studio
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
