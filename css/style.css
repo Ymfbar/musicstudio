@@ -1,0 +1,42 @@
+/* Custom CSS Anda */
+body {
+    background-color: #f8f9fa;
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-direction: column; /* Mengatur arah item menjadi kolom */
+    min-height: 100vh; /* Memastikan body setidaknya setinggi viewport */
+    margin: 0; /* Menghilangkan margin default body */
+}
+
+/* Kontainer utama yang akan "mengembang" */
+.main-content {
+    flex-grow: 1; /* Ini akan membuat kontainer ini mengisi ruang kosong yang tersedia */
+    display: flex; /* Tambahkan flexbox juga jika ingin mengatur konten di dalamnya */
+    flex-direction: column; /* Mengatur arah konten di dalamnya ke bawah */
+}
+
+.jumbotron {
+    background-image: url('https://via.placeholder.com/1200x400?text=Music+Studio+Background');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    min-height: 300px; /* Tambahkan tinggi minimal agar terlihat */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jumbotron h1, .jumbotron p {
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Opsional: Tambahkan padding ke container jika konten terlalu menempel ke tepi */
+.container {
+    padding-bottom: 1px; /* Contoh padding bawah */
+}
