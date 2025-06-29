@@ -5,33 +5,34 @@ include 'includes/header.php';
 
 <div class="container my-5">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-            <h2 class="text-center mb-4 display-4 fw-bold text-light">About Our Music Studio</h2>
-            <p class="lead text-light">
-                Selamat datang di Music Studio, tempat di mana kreativitas musik Anda bersinar. Kami berdedikasi untuk menyediakan lingkungan dan peralatan terbaik bagi para musisi, baik amatir maupun profesional, untuk berkarya, berlatih, dan merekam musik mereka.
+        <div class="col-lg-10 mx-auto text-center">
+            <h2 class="display-4 fw-bold mb-4">About Our Music Studio</h2>
+            <p class="lead mb-4">
+                Welcome to Music Studio, the place where your musical creativity shines. We are dedicated to providing the best environment and equipment for musicians, both amateur and professional, to create, practice, and record their music.
             </p>
-            <p class="text-light">
-                Didirikan pada tahun 2023, studio kami lahir dari hasrat akan musik berkualitas tinggi. Kami percaya bahwa setiap artis berhak mendapatkan akses ke fasilitas rekaman dan ruang latihan yang profesional tanpa harus mengeluarkan biaya yang mahal. Visi kami adalah menjadi pusat komunitas musik di mana para seniman dapat berkolaborasi dan tumbuh bersama.
+            <img src="https://images.unsplash.com/photo-1598488035139-BFFb2d08a51c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2ljJTIwc3R1ZGlvfGVufDB8fDB8fHww" class="img-fluid rounded shadow-lg my-4" alt="Interior of the music studio">
+            <p>
+                Founded in 2025, our studio was born from a passion for high-quality music. We believe that every artist deserves access to professional recording facilities and practice spaces without breaking the bank. Our vision is to be a hub for the music community where artists can collaborate and grow together.
             </p>
 
-            <hr class="my-5 bg-light">
+            <hr class="my-5 border-secondary">
 
-            <h3 class="text-center mb-4 fw-bold text-light">Tim Kami</h3>
-            <div class="row text-center">
+            <h3 class="fw-bold mb-5">Our Team</h3>
+            <div class="row">
                 <div class="col-md-4 mb-4">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid mb-3" alt="Foto Tim">
-                    <h5 class="text-light">Nama Anggota Tim</h5>
-                    <p class="text-light-50">Jabatan</p>
+                    <img src="https://via.placeholder.com/150/007BFF/FFFFFF?Text=Person" class="rounded-circle img-fluid mb-3 shadow" alt="Team Member Photo">
+                    <h5 class="fw-bold">Yuda M F Barimbing</h5>
+                    <p class="text-white-50">Studio Owner & Producer</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid mb-3" alt="Foto Tim">
-                    <h5 class="text-light">Nama Anggota Tim</h5>
-                    <p class="text-light-50">Jabatan</p>
+                    <img src="https://via.placeholder.com/150/007BFF/FFFFFF?Text=Person" class="rounded-circle img-fluid mb-3 shadow" alt="Team Member Photo">
+                    <h5 class="fw-bold">Jane Smith</h5>
+                    <p class="text-white-50">Sound Engineer</p>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid mb-3" alt="Foto Tim">
-                    <h5 class="text-light">Nama Anggota Tim</h5>
-                    <p class="text-light-50">Jabatan</p>
+                    <img src="https://via.placeholder.com/150/007BFF/FFFFFF?Text=Person" class="rounded-circle img-fluid mb-3 shadow" alt="Team Member Photo">
+                    <h5 class="fw-bold">Mike Johnson</h5>
+                    <p class="text-white-50">Community Manager</p>
                 </div>
             </div>
         </div>

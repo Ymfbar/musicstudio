@@ -14,17 +14,18 @@ include 'includes/header.php';
     Selamat datang, <strong><?php echo htmlspecialchars($_SESSION['username']); ?></strong>! Anda telah berhasil login.
 </div>
 
-<h2>Dashboard Pengguna</h2>
+<h2 class="mt-4">Dashboard Pengguna</h2>
 <p>Ini adalah halaman pribadi Anda. Anda bisa menambahkan konten khusus pengguna di sini.</p>
 
-<div class="card mt-4">
+<div class="card mt-4 bg-dark border-secondary">
     <div class="card-header">
         Informasi Akun
     </div>
     <div class="card-body">
         <p><strong>ID Pengguna:</strong> <?php echo $_SESSION['id']; ?></p>
         <p><strong>Username:</strong> <?php echo htmlspecialchars($_SESSION['username']); ?></p>
-        <p>...</p> </div>
+        <p>...</p>
+    </div>
 </div>
 
 <?php
