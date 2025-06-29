@@ -7,7 +7,7 @@ include 'includes/header.php';
     <div class="hero-content">
         <h1 class="display-2 mb-3">Make Your Music Shine</h1>
         <p class="lead mb-4">Discover, Create, and Record Your Sound with Our Professional Studio.</p>
-        <a class="btn btn-dark btn-lg" href="register.php" role="button">Get Started Now</a>
+        <a class="btn btn-dark btn-lg" href="login.php" role="button">Get Started Now</a>
     </div>
 </section>
 
