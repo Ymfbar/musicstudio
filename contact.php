@@ -3,6 +3,8 @@ include 'config.php';
 include 'includes/header.php';
 ?>
 
+<section class="hero-section">
+    <div class="hero-content">
 <div class="container my-5">
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
@@ -46,7 +48,7 @@ include 'includes/header.php';
                                     <textarea class="form-control" id="message" rows="4" required></textarea>
                                 </div>
                                 <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                                    <button type="submit" class="btn btn-secondary">Kirim Pesan</button>
                                 </div>
                             </form>
                         </div>

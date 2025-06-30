@@ -3,11 +3,13 @@ include 'config.php';
 include 'includes/header.php';
 ?>
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-lg-8 offset-lg-2 text-center">
-            <h2 class="text-light display-4 fw-bold mb-4">About Our Music Studio</h2>
-            <p class="text-light lead mb-4">
+<section class="hero-section">
+    <div class="hero-content">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <h2 class="text-light display-4 fw-bold mb-4">About Our Music Studio</h2>
+                <p class="text-light lead mb-4">
                 Welcome to Music Studio, the place where your musical creativity shines. We are dedicated to providing the best environment and equipment for musicians, both amateur and professional, to create, practice, and record their music.
             </p>
             <p class="text-light lead mb-4">
@@ -36,7 +38,7 @@ include 'includes/header.php';
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 <?php
 include 'includes/footer.php';

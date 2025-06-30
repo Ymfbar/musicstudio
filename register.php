@@ -57,7 +57,7 @@ include 'includes/header.php';
     <div class="col-md-6 col-lg-4">
         <div class="card shadow-lg">
             <div class="card-header bg-dark text-white text-center">
-                <h3>Daftar Akun Baru</h3>
+                <h3>Music Studio</h3>
             </div>
             <div class="card-body">
                 <?php if (!empty($error)): ?>

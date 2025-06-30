@@ -13,6 +13,7 @@ body {
     flex-grow: 1; /* Ini akan membuat kontainer ini mengisi ruang kosong yang tersedia */
     display: flex; /* Tambahkan flexbox juga jika ingin mengatur konten di dalamnya */
     flex-direction: column; /* Mengatur arah konten di dalamnya ke bawah */
+    
 }
 /* Modifikasi Jumbotron/Hero Section */
 .hero-section { /* Ganti .jumbotron dengan .hero-section untuk pemisahan gaya */
@@ -28,19 +29,6 @@ body {
     align-items: center; /* Pusatkan secara horizontal */
     text-align: center; /* Pusatkan teks */
     position: relative; /* Diperlukan untuk overlay */
-}
-
-.hero-section:hover { /* Ganti .jumbotron dengan .hero-section untuk pemisahan gaya */
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    min-height: 500px; /* Tinggikan sedikit hero section */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Pusatkan secara horizontal */
-    text-align: center; /* Pusatkan teks */
-    position: relative; /* Diperlukan untuk overlay */
-    transition: transform 0.3s ease;
 }
 
 .hero-section::before { /* Overlay gelap untuk kontras teks */
