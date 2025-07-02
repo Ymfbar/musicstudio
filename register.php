@@ -88,7 +88,7 @@ include 'includes/header.php';
                     </div>
                 </form>
             </div>
-            <div class="card-footer text-center">
+            <div class="card-footer text-center form-label">
                 Sudah punya akun? <a href="login.php">Login di sini</a>
             </div>
         </div>

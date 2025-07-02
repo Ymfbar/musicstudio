@@ -32,24 +32,22 @@ include 'includes/header.php';
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Nama Anda</label>
+                                    <label for="name" class="form-label-contact">Nama Anda</label>
                                     <input type="text" class="form-control" id="name" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Alamat Email</label>
+                                    <label for="email" class="form-label-contact">Alamat Email</label>
                                     <input type="email" class="form-control" id="email" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="subject" class="form-label">Subjek</label>
+                                    <label for="subject" class="form-label-contact">Subjek</label>
                                     <input type="text" class="form-control" id="subject" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Pesan</label>
+                                    <label for="message" class="form-label-contact">Pesan</label>
                                     <textarea class="form-control" id="message" rows="4" required></textarea>
                                 </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-secondary">Kirim Pesan</button>
-                                </div>
+                                    <button type="submit" class="btn btn-secondary btn-sm py-2">Kirim Pesan</button>
                             </form>
                         </div>
                     </div>

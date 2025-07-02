@@ -66,7 +66,7 @@ include 'includes/header.php';
                     </div>
                 </form>
             </div>
-            <div class="card-footer text-center">
+            <div class="card-footer text-center form-label">
                 Belum punya akun? <a href="register.php">Daftar sekarang</a>
             </div>
         </div>

@@ -67,7 +67,7 @@ body {
 .card {
     border: none;
     border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.2);
+    background-color:rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(2px); /* Efek blur untuk transparansi */
 }
 
@@ -78,7 +78,7 @@ body {
     margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color:rgba(255, 255, 255, 0.2); /* Warna latar belakang putih transparan */
+    background-color:rgba(0, 0, 0, 0.5); /* Warna latar belakang putih transparan */
     backdrop-filter: blur(2px); /* Efek blur untuk transparansi */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -97,11 +97,15 @@ body {
 .service-box h5 {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .service-box p {
     color: #ffffff;
+}
+
+.form-label {
+    color: #000000; /* Warna teks Bootstrap primary */
 }
 
 /* Opsional: Tambahkan padding ke container jika konten terlalu menempel ke tepi */
